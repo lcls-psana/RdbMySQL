@@ -11,6 +11,10 @@ Package author: Andy Salnikov
 Please describe any modifications that you made to the package in the
 reverse time order.
 
+Tag: V00-00-07
+2015-09-23 David Schneider
+- fix rhel7 compiler warnings
+
 Tag: V00-00-06
 2013-07-21 Andy Salnikov
 - update rdb-mysql-dump-table.cpp for changes in CmdLine interfaces

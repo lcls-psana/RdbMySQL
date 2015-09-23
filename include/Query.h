@@ -163,7 +163,7 @@ Query::executePar ( const std::string& q, const T1& p1 )
 {
   _qbuf.clear() ;
   std::string::size_type n = 0 ;
-  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return false ;
+  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return NULL ;
   _qbuf.append( q.data()+n, q.data()+q.size(), false, false ) ; // add rest of the query
 
   return execute ( _qbuf.str(), _qbuf.size() ) ;
@@ -175,8 +175,8 @@ Query::executePar ( const std::string& q, const T1& p1, const T2& p2 )
 {
   _qbuf.clear() ;
   std::string::size_type n = 0 ;
-  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return false ;
+  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return NULL ;
   _qbuf.append( q.data()+n, q.data()+q.size(), false, false ) ; // add rest of the query
 
   return execute ( _qbuf.str(), _qbuf.size() ) ;
@@ -188,9 +188,9 @@ Query::executePar ( const std::string& q, const T1& p1, const T2& p2, const T3& 
 {
   _qbuf.clear() ;
   std::string::size_type n = 0 ;
-  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return false ;
+  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return NULL ;
   _qbuf.append( q.data()+n, q.data()+q.size(), false, false ) ; // add rest of the query
 
   return execute ( _qbuf.str(), _qbuf.size() ) ;
@@ -203,10 +203,10 @@ Query::executePar ( const std::string& q, const T1& p1, const T2& p2, const T3& 
 {
   _qbuf.clear() ;
   std::string::size_type n = 0 ;
-  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return false ;
+  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return NULL ;
   _qbuf.append( q.data()+n, q.data()+q.size(), false, false ) ; // add rest of the query
 
   return execute ( _qbuf.str(), _qbuf.size() ) ;
@@ -219,11 +219,11 @@ Query::executePar ( const std::string& q, const T1& p1, const T2& p2, const T3& 
 {
   _qbuf.clear() ;
   std::string::size_type n = 0 ;
-  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return false ;
+  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return NULL ;
   _qbuf.append( q.data()+n, q.data()+q.size(), false, false ) ; // add rest of the query
 
   return execute ( _qbuf.str(), _qbuf.size() ) ;
@@ -236,12 +236,12 @@ Query::executePar ( const std::string& q, const T1& p1, const T2& p2, const T3& 
 {
   _qbuf.clear() ;
   std::string::size_type n = 0 ;
-  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p6 ) ) == std::string::npos ) return false ;
+  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p6 ) ) == std::string::npos ) return NULL ;
   _qbuf.append( q.data()+n, q.data()+q.size(), false, false ) ; // add rest of the query
 
   return execute ( _qbuf.str(), _qbuf.size() ) ;
@@ -254,13 +254,13 @@ Query::executePar ( const std::string& q, const T1& p1, const T2& p2, const T3& 
 {
   _qbuf.clear() ;
   std::string::size_type n = 0 ;
-  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p6 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p7 ) ) == std::string::npos ) return false ;
+  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p6 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p7 ) ) == std::string::npos ) return NULL ;
   _qbuf.append( q.data()+n, q.data()+q.size(), false, false ) ; // add rest of the query
 
   return execute ( _qbuf.str(), _qbuf.size() ) ;
@@ -275,14 +275,14 @@ Query::executePar ( const std::string& q, const T1& p1, const T2& p2, const T3& 
 {
   _qbuf.clear() ;
   std::string::size_type n = 0 ;
-  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p6 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p7 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p8 ) ) == std::string::npos ) return false ;
+  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p6 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p7 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p8 ) ) == std::string::npos ) return NULL ;
   _qbuf.append( q.data()+n, q.data()+q.size(), false, false ) ; // add rest of the query
 
   return execute ( _qbuf.str(), _qbuf.size() ) ;
@@ -297,15 +297,15 @@ Query::executePar ( const std::string& q, const T1& p1, const T2& p2, const T3& 
 {
   _qbuf.clear() ;
   std::string::size_type n = 0 ;
-  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p6 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p7 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p8 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p9 ) ) == std::string::npos ) return false ;
+  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p6 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p7 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p8 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p9 ) ) == std::string::npos ) return NULL ;
   _qbuf.append( q.data()+n, q.data()+q.size(), false, false ) ; // add rest of the query
 
   return execute ( _qbuf.str(), _qbuf.size() ) ;
@@ -320,16 +320,16 @@ Query::executePar ( const std::string& q, const T1& p1, const T2& p2, const T3& 
 {
   _qbuf.clear() ;
   std::string::size_type n = 0 ;
-  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p6 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p7 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p8 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p9 ) ) == std::string::npos ) return false ;
-  if ( ( n = appendToQuery( q, n, p10 ) ) == std::string::npos ) return false ;
+  if ( ( n = appendToQuery( q, n, p1 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p2 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p3 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p4 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p5 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p6 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p7 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p8 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p9 ) ) == std::string::npos ) return NULL ;
+  if ( ( n = appendToQuery( q, n, p10 ) ) == std::string::npos ) return NULL ;
   _qbuf.append( q.data()+n, q.data()+q.size(), false, false ) ; // add rest of the query
 
   return execute ( _qbuf.str(), _qbuf.size() ) ;
